@@ -28,7 +28,6 @@ map = folium.Map(
                 zoom_start = 50)
 map
 ```
-![image](https://github.com/user-attachments/assets/b6cc1401-5f53-4a41-bf32-b6cfad1d3a5a)
 
 <br>
 
@@ -65,8 +64,6 @@ for idx in df.index :
     ).add_to(map)
 ```
 
-![image](https://github.com/user-attachments/assets/e9f1b00d-cb34-4b46-bb38-65ddf43f5988)
-
 -   `folium.Marker().add_to()` : 지도에 기본 마커로 마킹해주는 클래스
     -   icon=folium.Icon() : 마커모양 지정
         -   color : 마커 색상 지정
@@ -100,8 +97,6 @@ for idx in df.index :
     ).add_to(map)
 ```
 
-![image](https://github.com/user-attachments/assets/769841f4-a94d-40a7-a99f-d6f3efde15dc)
-
 <br>
 
 ### 경계면 표시하기
@@ -121,8 +116,6 @@ folium.GeoJson(
     style_function = {"opacity" : 0.5, "weight" : 0.6, "color" : "yellow"}
 ).add_to(map)
 ```
-
-![image](https://github.com/user-attachments/assets/10c32c3c-96f0-49e7-a3a0-0ac916b9ab73)
 
 -   `folium.Choropleth().add_to()` : 경계면 그려주는 클래스. 양적 데이터 별로 색상을 다르게 표시
     -   geo\_data : 지도 경계면 데이터
@@ -151,5 +144,3 @@ folium.Choropleth(
     key_on = "properties.SIG_KOR_NM" 
 ).add_to(map)
 ```
-
-![image](https://github.com/user-attachments/assets/67ee80c5-6248-4b95-9fb9-91dec45ca800)
